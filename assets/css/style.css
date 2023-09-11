@@ -71,6 +71,11 @@ nav {
   top: 0;
 }
 
+h2 {
+  display: flex;
+  align-items: center;
+}
+
 header ul {
   list-style-type: none;
   display: none;
@@ -104,3 +109,43 @@ header li {
 
   margin-top: 55px;
 }
+
+#gallery span {
+  background-color: #171718;
+  color: aliceblue;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+#gallery div {
+  position: relative;
+  vertical-align: bottom;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  padding-right: 50px;
+
+}
+#About{
+ 
+
+
+}
+
+
+
+ #cards{
+display: flex;
+flex-wrap: wrap;
+height: 30vh;
+width: 100%;
+padding: right 0; ;
+margin-top: 55px;;
+
+
+}
+
+
+
