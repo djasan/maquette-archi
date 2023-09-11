@@ -1,0 +1,98 @@
+/* Importation des fonts */
+
+@font-face {
+  font-family: "SEGOEUI";
+
+  /* Creation d'un raccourci */
+
+  src: url(../font/SEGOEUI.TTF);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "playfairDR", serif;
+}
+.bma {
+  padding: 5rem;
+  margin: 5rem;
+  border: 1px solid black;
+  border-radius: 5rem;
+}
+#img-header .archi {
+  display: none;
+}
+#brimg {
+  background-color: rgba(0, 0, 0, 0.658);
+  font-weight: bold;
+  font-size: x-large;
+  padding: 2rem;
+}
+
+img,
+input {
+  width: 100%;
+}
+
+/* Pour appeler l'id Logo j'utilise le selecteur id# et son nom logo */
+#logo {
+  color: #130202;
+  padding: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+#burger {
+  padding: 1rem;
+}
+h1 {
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+}
+.blue {
+  color: blue;
+}
+/* pour appeler un element HTML  dans un selecteur j'utilise son nom */
+
+nav {
+  display: flex;
+  /* pour( gérer l'alignement vertical des enfants de ma nav j'utilise align-items: ;) */
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 11px 5px -6px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 0px 11px 5px -6px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 0px 11px 5px -6px rgba(0, 0, 0, 0.76);
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 55px;
+  top: 0;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  display: none;
+}
+
+
+
+
+
+#check:checked~ul{
+display: block;
+}
+
+#img-header {
+  background-image: url(../img/architect.jpg);
+  background-position: center;
+  height:70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 55px;
+}
