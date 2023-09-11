@@ -27,7 +27,7 @@
   background-color: rgba(0, 0, 0, 0.658);
   font-weight: bold;
   font-size: 5rem;
-  padding:1rem;
+  padding: 1rem;
 }
 
 img,
@@ -65,30 +65,37 @@ nav {
   background-color: rgb(255, 255, 255);
   position: fixed;
   width: 100%;
- 
+
   z-index: 1;
-  height: 55px;
+  height: 8vh;
   top: 0;
 }
 
 header ul {
-  display: flex;
   list-style-type: none;
+  display: none;
+
+  position: absolute;
+  background-color: rgb(249, 250, 250);
+  top: 8vh;
+}
+
+header li {
+  margin: 2rem;
+}
+
+#check {
   display: none;
 }
 
-
-
-
-
-#check:checked~ul{
-display: block;
+#check:checked ~ ul {
+  display: flex;
 }
 
 #img-header {
   background-image: url(../img/architect.jpg);
   background-position: center;
-  height:70vh;
+  height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
